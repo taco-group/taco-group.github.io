@@ -422,25 +422,26 @@
         <!-- END section -->
 
 
-<div class="footer">
+<footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="copyright">
                     <p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                        All rights reserved | This template is made with <i class="icon-heart text-danger"
-                                                                            aria-hidden="true"></i> by <a
-                            href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        &copy; <span id="current-year"></span> All rights reserved | Built upon
+                        <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">Colorlib</a>
                     </p>
+                    <!-- RevolverMaps Widget -->
+                    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=51rpu3e5zw4&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</footer>
 
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 
     </div>
     <!-- .site-wrap -->
