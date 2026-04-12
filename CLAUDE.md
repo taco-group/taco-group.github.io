@@ -38,6 +38,8 @@ All pages are standalone HTML files sharing a common header/nav/footer structure
 
 Additional pages exist but are **not linked in the nav**: `research.html`, `prospective_students.html`.
 
+The `meranda/` directory is a standalone event page (LID workshop) with its own structure — it is independent from the main site.
+
 **Navigation** is defined in each HTML file's `<nav>` block — changes to nav must be replicated across **all** pages (index, publication, teaching, group, resource, citation_map, research, prospective_students).
 
 ## Key Directories
@@ -102,6 +104,10 @@ Edit `group.html`. Members use Bootstrap `col-md-3` cards. Add photo to `groups/
 ```
 
 Group sections are: PI, PhD Students, MS Students, Undergraduate Students, Alumni/Visiting.
+
+### Citation Map
+
+`citationmap.py` uses the external `citation_map` Python package (pip-installable) to regenerate `citation_map.html` from Google Scholar data. The scholar ID is hardcoded in the script (`9ajdZaEAAAAJ`). This page is auto-generated — edit the script rather than the HTML directly.
 
 ## Styling Notes
 
